@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="style.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <div class="navbar-div drag">
+        <a><img src="assets/img/transparent.png" class="float-left no-drag" draggable="false" /></a>
+        <div class="navbar-text-div float-left">
+            <b class="float-left no-drag">
+                <p1 style="margin-right: 30px;">LinSpleeter</p1>
+            </b>
+        </div>
+
+        <div class="navbar-btn-div float-right">
+            <button id="min-btn" class="no-drag action-btn" onclick="Minimize();"></button>
+            <button id="max-btn" class="no-drag action-btn" onclick="Maximize();"></button>
+            <button id="close-btn" class="no-drag action-btn" onclick="Exit();"></button>
+        </div>
+    </div>
+
+
+    <div class="main-div">
+        <form id="spleeter-form">
+            <select id="stems-input">
+                <option value="2">2 Stems</option>
+                <option value="3">3 Stems</option>
+                <option value="4">4 Stems</option>
+            </select>
+
+            <input type="text" name="" value="/home/maurice/Music/test" id="output-folder" placeholder="Select or enter output filepath">
+            <input type="button" id="select-output-directory" onclick="selectFolder()">
+
+            <input type="text" name="" value="/home/maurice/Music/banaan.mp3" id="input-file" placeholder="Select or enter input file">
+            <input type="button" id="select-input-file" onclick="selectFile()">
+
+            <input type="submit">spleet</button>
+        </form>
+
+        <div id="errors">
+
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>

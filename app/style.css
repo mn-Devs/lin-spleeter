@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    background-color: black;
+    user-select: none;
+    -webkit-user-drag: none;
+    margin: 0;
+}
+
+/*default*/
+button:focus,
+a:focus {
+    outline: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.no-drag {
+    -webkit-app-region: none;
+}
+
+.drag {
+    -webkit-app-region: drag;
+}
+
+/*navbar*/
+.navbar-div {
+    width: calc(100% - 20px);
+    padding: 10px 10px 10px 10px;
+    height: 30px;
+}
+
+.navbar-div img {
+    height: 100%;
+}
+
+.navbar-text-div p,
+.navbar-text-div p1 {
+    padding: 0px;
+    margin: 0px 10px 0px 0px;
+    line-height: 30px;
+    color: white;
+    float: left;
+    -webkit-app-region: none;
+    transition: 0.3s;
+}
+
+.navbar-text-div p:hover {
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar-text-div {
+    margin-left: 20px;
+    float: left;
+}
+
+.navbar-btn-div {
+    height: 100%;
+}
+
+.navbar-btn-div button {
+    margin-top: 5px;
+}
+
+/*action btn*/
+.action-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    cursor: pointer;
+    -webkit-app-region: none;
+}
+
+#min-btn {
+    background-color: #efca00;
+}
+
+#max-btn {
+    background-color: #3fc772;
+}
+
+#close-btn {
+    background-color: #e7524b;
+}
+
+.active-btn {
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#errors {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 48px);
+    background-color: white;
+    padding: 12px 24px;
+    height: calc(100% - 347px);
+    overflow-y: scroll;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#spleeter-form{
+    padding: 50px 25px;
+}
+#spleeter-form input:focus,
+#spleeter-form select:focus {
+    outline: none;
+}
+
+#spleeter-form input[type="button"],
+#spleeter-form input[type="submit"],
+#spleeter-form input[type="text"],
+#spleeter-form select {
+    border: 0px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    margin: 0px;
+    padding: 12px 24px;
+    float: left;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#spleeter-form input[type="button"]:hover {
+    background-color: black;
+    -webkit-filter: invert(0%);
+
+}
+#spleeter-form input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+    
+}
+
+#spleeter-form input[type="button"] {
+    width: 30px;
+    background-image: url("./assets/img/folder.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    -webkit-filter: invert(100%);
+}
+
+#spleeter-form input[type="text"] {
+    width: calc(100% - 96px);
+}
+
+#spleeter-form input[type="submit"] {
+    width: 100%;
+}
+
+#spleeter-form select {
+    width: 100%;
+}

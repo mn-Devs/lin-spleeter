@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <style>
+        body {
+            opacity: 1;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            user-select: none;
+            margin: auto;
+            overflow: hidden;
+            -webkit-user-drag: none;
+        }
+
+        .main {
+            color: white;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        img {
+            animation: rotate 5s ease-in-out infinite;
+            width: auto;
+            height: 0px;
+            position: absolute;
+        }
+
+        @keyframes rotate {
+            0% {
+                height: 300px;
+                transform: rotateZ(-0deg);
+            }
+            20% {
+                height: 275px;
+                transform: rotateZ(360deg);
+            }
+            40% {
+                height: 300px;
+                transform: rotateZ(-0deg);
+            }
+            60% {
+                height: 275px;
+                transform: rotateZ(360deg);
+            }
+            80% {
+                transform: rotateZ(-0deg);
+                height: 300px;
+            }
+            100% {
+                transform: rotateZ(360deg);
+                height: 275px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <img src="https://mndevs.host/home/logo.png">
+        </div>
+    </body>
+</html>
